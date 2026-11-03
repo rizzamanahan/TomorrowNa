@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffadd2">
+<title>Izza's Birthday Fairyland</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;overflow-x:hidden}body{font-family:Arial,"Trebuchet MS",sans-serif;color:#80164c;text-align:center;background:linear-gradient(150deg,#ffddea,#ffc2df 45%,#e8d1ff);}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(circle at 15% 20%,#fff9 0 2px,transparent 3px),radial-gradient(circle at 80% 35%,#fff8 0 3px,transparent 4px);background-size:75px 75px,110px 110px;animation:bgmove 12s linear infinite}@keyframes bgmove{to{background-position:75px -75px,-110px 110px}}
+.page{position:relative;z-index:2;width:min(100%,680px);margin:auto;padding:28px 14px 100px}.eyebrow{letter-spacing:3px;font-size:12px;font-weight:800;color:#b3236c}h1{margin:8px 0 12px;font-size:clamp(40px,12vw,68px);line-height:.98;color:#d4146b;text-shadow:0 3px #fff,0 8px 20px #9b2a6740;animation:float 2.5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-7px)}}.pill{display:inline-block;padding:10px 18px;background:#fff;border-radius:999px;font-weight:900;color:#d4146b;box-shadow:0 8px 22px #a62d6d33;animation:pulse 1.7s infinite}@keyframes pulse{50%{transform:scale(1.05)}}
+.photo{width:min(88vw,390px);margin:24px auto;padding:7px;border-radius:30px;background:linear-gradient(140deg,#fff,#ff79b9,#fff4aa,#fff);box-shadow:0 18px 45px #96265a42,0 0 30px #fff8}.photo img{display:block;width:100%;height:auto;border-radius:24px}.card{margin:18px auto;padding:23px 18px;border:1px solid #fff;background:#ffffffc9;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:25px;box-shadow:0 14px 35px #8e255018;font-size:17px;line-height:1.65}.party{font-size:clamp(25px,8vw,37px);font-weight:1000;color:#c21363;margin:14px 0;animation:party 1.8s ease-in-out infinite}@keyframes party{50%{transform:scale(1.04);text-shadow:0 0 16px #ff72b1}}.reminder{border:2px solid #ff72ad}.reminder h2{margin:0 0 12px;color:#d4146b}.item{margin:11px 0;padding:13px;background:#fff0f7;border-radius:18px}.label{display:block;font-size:12px;letter-spacing:1.4px;font-weight:800}.value{font-size:19px;font-weight:1000;color:#bd145d;margin-top:4px}.ending{font-size:23px;font-weight:900;margin-top:27px}.small{font-size:14px;margin-top:10px}
+.magic{position:fixed;z-index:4;bottom:-50px;pointer-events:none;filter:drop-shadow(0 0 6px #fff);animation:rise linear forwards}@keyframes rise{0%{transform:translate3d(0,0,0) rotate(0);opacity:0}12%{opacity:1}100%{transform:translate3d(var(--drift),-115vh,0) rotate(360deg);opacity:0}}.spark{position:fixed;z-index:3;width:5px;height:5px;border-radius:50%;background:#fff;pointer-events:none;box-shadow:0 0 8px #fff,0 0 16px #ff75b5;animation:twinkle 1.5s ease-in-out infinite alternate}@keyframes twinkle{to{opacity:.2;transform:scale(.45)}}
+.fairy{position:fixed;z-index:5;pointer-events:none;font-size:30px;filter:drop-shadow(0 0 8px #fff);animation:fairy 4s ease-in-out infinite}.f1{top:17%;left:2%}.f2{top:58%;right:2%;animation-delay:1s}@keyframes fairy{50%{transform:translate(10px,-25px) rotate(8deg) scale(1.12)}}
+.music{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:9999;border:2px solid #fff;color:#fff;background:linear-gradient(135deg,#e91c77,#ff7db5);border-radius:999px;padding:11px 14px;font-weight:900;box-shadow:0 8px 22px #9d245a55;cursor:pointer}.music.playing{animation:pulse 1.6s infinite}.note{font-size:11px;opacity:.8}
+@media(max-width:480px){.page{padding:22px 12px 95px}.card{padding:20px 15px;font-size:16px}.photo{width:91vw}.fairy{font-size:26px}.music{font-size:12px;padding:10px 12px}.item{padding:12px}.value{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.page h1,.pill,.party{animation-duration:4s}}
+</style>
+</head>
+<body>
+<audio id="bgMusic" autoplay loop playsinline preload="auto"><source src="birthday-music.mp3" type="audio/mpeg"></audio>
+<div class="fairy f1">🧚‍♀️</div><div class="fairy f2">🧚‍♀️</div>
+<main class="page">
+  <div class="eyebrow">✨ ONE MORE SLEEP ✨</div>
+  <h1>Tomorrow is<br>My Birthday! 🎂</h1>
+  <div class="pill">🧚‍♀️ See you tomorrow! 💕</div>
+  <div class="photo"><img src="izza2.png" alt="Birthday portrait"></div>
+  <section class="card">
+    Thank you so much for taking the time to confirm na pupunta kayo. 💗<br><br>
+    I'm so excited to celebrate this special day with you! Get ready for <strong>pink vibes, good food, lots of pictures, laughter, Jolly moments, and a little fairyland magic.</strong> ✨
+    <div class="party">MAGIGING MASAYA 'TO! 💕✨</div>
+    Bring your best pink look, your best pose, and your best energy. Let's make tomorrow full of happy memories, kwentuhan, pictures, and unforgettable moments together! 📸🎀
+  </section>
+  <section class="card reminder">
+    <h2>🎀 Birthday Reminder 🎀</h2>
+    <div class="item"><span class="label">⏰ PLEASE BE THERE BY</span><div class="value">5:50 PM</div></div>
+    <div class="item"><span class="label">📍 LOCATION</span><div class="value">Jollibee Banaba<br>San Mateo, Rizal</div></div>
+    <div class="item"><span class="label">👗 DRESS CODE</span><div class="value">ANYTHING PINK 💗</div></div>
+  </section>
+  <div class="ending">See you in my little Fairyland! 🧚‍♀️🏰💗</div>
+  <div class="small">Let's eat, laugh, take lots of pictures, and make beautiful memories together. ✨</div>
+</main>
+<button id="musicBtn" class="music" type="button" aria-label="Toggle background music">🎵 Music</button>
+<script>
+const music=document.getElementById('bgMusic'),btn=document.getElementById('musicBtn');
+music.volume=.5;
+function setBtn(){btn.textContent=music.paused?'🎵 Play Music':'🎵 Music On';btn.classList.toggle('playing',!music.paused)}
+async function tryPlay(){try{await music.play();setBtn()}catch(e){setBtn()}}
+window.addEventListener('load',tryPlay);
+// Mobile browsers may require the first user interaction before audible audio can start.
+['pointerdown','touchstart','click'].forEach(evt=>document.addEventListener(evt,()=>{if(music.paused)tryPlay()},{once:true,passive:true}));
+btn.addEventListener('click',async e=>{e.stopPropagation();if(music.paused){await tryPlay()}else{music.pause();setBtn()}});
+const icons=['✨','💖','🦋','🌸','⭐','💕','🎀','🫧'];
+function magic(){const x=document.createElement('span');x.className='magic';x.textContent=icons[Math.floor(Math.random()*icons.length)];x.style.left=(Math.random()*94)+'vw';x.style.fontSize=(14+Math.random()*17)+'px';x.style.animationDuration=(5+Math.random()*4)+'s';x.style.setProperty('--drift',(-30+Math.random()*60)+'px');document.body.appendChild(x);setTimeout(()=>x.remove(),9500)}
+setInterval(magic,480);
+for(let i=0;i<38;i++){const s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=Math.random()*2+'s';document.body.appendChild(s)}
+</script>
+</body>
+</html>
